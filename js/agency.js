@@ -1,6 +1,9 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  $('#formulaire_habits').hide();
+  $('#formulaire_habits_2').hide();
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -38,19 +41,31 @@
   // When the user clicks on the button, open the modal
   btn.onclick = function() {
     modal.style.display = "block";
-  }
+  };
 
   // When the user clicks on <span> (x), close the modal
   span.onclick = function() {
     modal.style.display = "none";
-  }
+  };
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
-  }
+  };
+
+  $('#subscribe').click(function() {
+    $('#formulaire_infos').slideToggle();
+    $('#formulaire_habits').slideToggle();
+  });
+  $('#val_habits').click(function() {
+    $('#formulaire_habits').slideToggle();
+    $('#formulaire_habits_2').slideToggle();
+  });
+  $('#val_habits_2').click(function() {
+    modal.style.display = "none";
+  });
 
   // Collapse Navbar
   var navbarCollapse = function() {

@@ -90,21 +90,76 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <div class="wrapper">
-      <form class="form-signin">
-        <h2 class="form-signin-heading">Please enter your informations</h2>
-        <input type="text" class="form-control" name="name" placeholder="Name" required=""/>
-        <input type="text" class="form-control" name="email" placeholder="Email Address" required="" autofocus=""/>
-        <input type="password" class="form-control password" name="password" placeholder="Password" required=""
-               autofocus=""/>
-        <input type="password" class="form-control password" name="password_conf" placeholder="Password confirmation"
-               required=""/>
+      <div class="form-signin" id="formulaire_infos">
+        <div>
+          <h2 class="form-signin-heading">Please enter your informations</h2>
+          <input type="text" class="form-control" name="name" placeholder="Name" required=""/>
+          <input type="text" class="form-control" name="email" placeholder="Email Address" required="" autofocus=""/>
+          <input type="password" class="form-control password" name="password" placeholder="Password" required=""
+                 autofocus=""/>
+          <input type="password" class="form-control password" name="password_conf" placeholder="Password confirmation"
+                 required=""/>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" id="subscribe">Subscribe</button>
+      </div>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Subscribe</button>
-      </form>
+      <div class="form-signin" id="formulaire_habits">
+        <div>
+          <h2 class="form-signin-heading">Please enter your travel habits</h2>
+          <ul class="unstyled centered">
+            <li>
+              <input class="styled-checkbox" id="styled-checkbox-1" name="habits" type="radio" value="value1">
+              <label for="styled-checkbox-1">I use my car every day</label>
+            </li>
+            <li>
+              <input class="styled-checkbox" id="styled-checkbox-2" name="habits" type="radio" value="value2">
+              <label for="styled-checkbox-2">I use it more than 5 times per week</label>
+            </li>
+            <li>
+              <input class="styled-checkbox" id="styled-checkbox-3" name="habits" type="radio" value="value3">
+              <label for="styled-checkbox-3">I use it sometimes (2-3 times/week)</label>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" id="val_habits">Validate</button>
+      </div>
+      <div class="form-signin" id="formulaire_habits_2">
+        <div>
+          <h2 class="form-signin-heading">Please enter your rewards interest</h2>
+          <ul class="unstyled centered">
+            <li>
+              <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value1">
+              <label for="styled-checkbox-4">Earn objects</label>
+            </li>
+            <li>
+              <input class="styled-checkbox" id="styled-checkbox-5" type="checkbox" value="value1">
+              <label for="styled-checkbox-5">Earn reductions</label>
+            </li>
+            <li>
+              <input class="styled-checkbox" id="styled-checkbox-6" type="checkbox" value="value1">
+              <label for="styled-checkbox-6">Earn gift cards</label>
+            </li>
+            <li>
+              <input class="styled-checkbox" id="styled-checkbox-7" type="checkbox" value="value1">
+              <label for="styled-checkbox-7">Make donations</label>
+            </li>
+            <li>
+              <input class="styled-checkbox" id="styled-checkbox-8" type="checkbox" value="value1">
+              <label for="styled-checkbox-8">Earn diners</label>
+            </li>
+            <li>
+              <input class="styled-checkbox" id="styled-checkbox-9" type="checkbox" value="value1">
+              <label for="styled-checkbox-9">Not interested (yet) about rewards</label>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" id="val_habits_2">Validate</button>
+      </div>
     </div>
   </div>
 
 </div>
+
 
 
 <!-- Services -->
